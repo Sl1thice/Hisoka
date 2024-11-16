@@ -6,3 +6,56 @@
   padding: 0;
   font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
 }
+
+.main-header {
+  height: 100vh;
+  background-color: #DE3D5E;
+}
+
+.main-nav, .logo-section, .list-section,
+.list-section ul {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.logo-section {
+  width: 30%;
+  justify-content: start;
+  align-items: end;
+  margin: 8px 0 0 40px;
+
+}
+
+.logo-img {
+  height: 80px;
+}
+
+.list-section ul{
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.list-section a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: #FEFB9E;
+}
+
+
+.list-section a:hover {
+  color: #4D3A84;
+}
+
+.hero-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-information img{
+  height: 540px;
+}
