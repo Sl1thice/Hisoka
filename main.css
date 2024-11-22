@@ -13,9 +13,13 @@
 }
 
 .main-nav, .logo-section, .list-section,
+.list-section ul, .hero-content, .article-container {
+    display:flex;
+    flex: 1;
+  }
+
+.main-nav, .logo-section, .list-section,
 .list-section ul {
-  display: flex;
-  flex: 1;
   flex-direction: row;
 }
 
@@ -30,11 +34,18 @@
   height: 5em;
 }
 
-.list-section ul{
+.list-section ul, .article-container {
   justify-content: center;
   align-items: center;
-  list-style: none;
+}
+
+.list-section ul, .hero-information h1,
+.article-container h1 {
   text-transform: uppercase;
+}
+
+.list-section ul{
+  list-style: none;
 }
 
 .list-section a {
@@ -73,8 +84,6 @@
 }
 
 .hero-content {
-  display: flex;
-  flex: 1;
   justify-content: center;
 }
 
@@ -86,11 +95,13 @@
   font-size: 1.125em;
 }
 
+.hero-information h1, .article-container h1 {
+  font-family: "Anton", Arial, Helvetica, sans-serif;
+}
+
 .hero-information h1 {
-  text-transform: uppercase;
   font-size: 3.75em;
   letter-spacing: 0.1em;
-  font-family: "Anton", Arial, Helvetica, sans-serif;
 }
 
 .hero-profile img {
@@ -100,9 +111,19 @@
 
 .article-container {
   background-color: #4D3A84;
-  height: 100vh;
   text-align: center;
+  padding-top: 100px;
 }
+
+.article-content {
+  background-color: #FEFB9E;
+
+}
+
 .article-container h1 {
-  padding-top: 120px;
+  text-decoration: underline;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.00625em;
 }
